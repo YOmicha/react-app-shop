@@ -15,7 +15,7 @@ import '../styles/global.css';
 import Appcontext from '../context/Appcontext';
 import useInitialState from '../hooks/useInicialState';
 
-const App = () => {
+const App = () => { 
     const initialState = useInitialState();
     
     return (
