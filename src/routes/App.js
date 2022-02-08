@@ -20,7 +20,7 @@ const App = () => {
     
     return (
         <Appcontext.Provider value={initialState}>
-            <BrowserRouter basename='/'>
+            <HashRouter basename='/' hashType="noslash">
                 <Layout>
                     <Routes>
                         <Route path='/' element={ <Home />} />
@@ -35,7 +35,7 @@ const App = () => {
                         <Route path='*' element={<NotFound />} />
                     </Routes>
                 </Layout>            
-            </BrowserRouter>
+            </HashRouter>
     </Appcontext.Provider>
     );
 }
