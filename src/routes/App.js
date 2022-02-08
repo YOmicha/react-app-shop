@@ -20,7 +20,7 @@ const App = () => {
     
     return (
         <Appcontext.Provider value={initialState}>
-            <HashRouter basename='/' hashType="noslash">
+            <HashRouter basename='/' hashType="slash">
                 <Layout>
                     <Routes>
                         <Route path='/' element={ <Home />} />
