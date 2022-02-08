@@ -1,5 +1,5 @@
 import React  from 'react';
-import { BrowserRouter, Routes , Route } from 'react-router-dom';
+import { BrowserRouter, Routes , Route , HashRouter} from 'react-router-dom';
 import Layout from '../containers/Layout';
 import Login from '../pages/Login';
 import RecoveryPassword from '../containers/RecoveryPassword';
@@ -20,7 +20,7 @@ const App = () => {
     
     return (
         <Appcontext.Provider value={initialState}>
-            <BrowserRouter>
+            <BrowserRouter basename='/'>
                 <Layout>
                     <Routes>
                         <Route path='/' element={ <Home />} />

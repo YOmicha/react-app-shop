@@ -68,6 +68,6 @@ module.exports = {
             directory: path.join(__dirname, 'dist'), 
         },        
         compress: true,
-        port: 3008,
+        port: 3009,
     }
 }
